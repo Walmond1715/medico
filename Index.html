@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Site Periguari</title>
+    <title>Periguari Lucena</title>
 
     <link rel="stylesheet" type="text/css" href="Estilo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 </head>
 
 <body>
-
     <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(144, 186, 187);">
+    <nav class="navbar navbar-expand-lg navbar-light cornavbar">
         <div class="container">
             <a class="navbar-brand mb-0" href="#"><img src="Imagens\logop.png" width="40" height="33" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="#inicio">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#textoPerfil">Perfil</a>
@@ -33,26 +33,23 @@
                         <a class="nav-link" href="#textoArtigos">Artigos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#textoContato">Contato</a>
                     </li>
 
                 </ul>
+
+                <!--Redes Sociais-->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" id="navDrop">Redes Sociais</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="http:///www.facebook.com/periguari.lucena" target="_blank">Facebook</a>
-                                <a class="dropdown-item" href="http://www.instagram.com/periguarilucena/" target="_blank"> Instagram</a>
-                                <a class="dropdown-item" href="http://twitter.com/Periguari1" target="_blank">Twiter</a>
+                                <a class="dropdown-item" href="http:///www.facebook.com/periguari.lucena" target="_blank"><i class="fab fa-facebook-f mr-2"></i> Facebook</a>
+                                <a class="dropdown-item" href="http://www.instagram.com/periguarilucena/" target="_blank"><i class="fab fa-instagram mr-2"></i> Instagram</a>
+                                <a class="dropdown-item" href="http://twitter.com/Periguari1" target="_blank"><i class="fab fa-twitter mr-2"></i>Twitter</a>
                         </li>
                     </ul>
-
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control ml-4 mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Ok</button>
-                    </form>
                     </div>
                 </div>
             </div>
@@ -64,11 +61,19 @@
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <div class="container">
+
+            <!--Indicadores ao passar a imagem no Carousel-->
+
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" style="background-color: blanchedalmond;" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" style="background-color: blanchedalmond;" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" style="background-color: blanchedalmond;" data-slide-to="2"></li>
             </ol>
+
+            <!--Immagens do Carousel-->
+
+            <!--Primeiro item do Carousel (Imagem)-->
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="Imagens\cerebro.jpg" class="d-block w-100" alt="...">
@@ -77,6 +82,9 @@
                         <p class="lead">Agende sua consulta em nossa central de atendimento</p>
                     </div>
                 </div>
+
+                <!--Segundo item do Carousel (Imagem)-->
+
                 <div class="carousel-item">
                     <img src="Imagens\neuro.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -84,6 +92,9 @@
                         <p class="lead">Especialidade no tratamento de diversas doenças do sistema nervoso central</p>
                     </div>
                 </div>
+
+                <!--Terceiro item do Carousel (Imagem)-->
+
                 <div class="carousel-item">
                     <img src="Imagens\tracto.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -92,12 +103,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Botões de navegação lateral do Carousel -->
+
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon color dark" aria-hidden="true"></span>
+                <span><i class="fas fa-brain fa-lg cor"></i></span>
                 <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span><i class="fas fa-brain fa-lg cor"></i></span>
                 <span class="sr-only">Próxima</span>
             </a>
         </div>
@@ -108,8 +122,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="jumbotron jumbotron-fluid mt-3 p-1" style="background-color:rgb(144, 186, 187);">
-                    <h1 class="text-center display-3">Seja Bem Vindo</h1>
+                <div class="jumbotron jumbotron-fluid mt-3 p-1">
+                    <h1 class="text-center display-4">Seja Bem Vindo</h1>
                 </div>
             </div>
         </div>
@@ -120,63 +134,183 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="jumbotron jumbotron-fluid mt-3 p-1" style="background-color:rgb(144, 186, 187);">
-                    <h1 id=" textoPerfil " class="text-center display-3 ">Perfil</h1>
+                <div class="jumbotron jumbotron-fluid mt-3 p-1">
+                    <h1 id="textoPerfil" class="text-center display-4">Perfil</h1>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Artigos-->
+    <div class="container">
+        <div class="card mb-3">
+            <div class="row no-gutters my-1 ml-1 mr-1">
+                <div class="col-md-4">
+                    <img src="Imagens/foto2.jpeg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title display-4 font-weight-bold">Periguari Lucena</h3>
+                        <h3 class="card-title display-5 font-weight-bold">CRM 1932 RQE 2042</h3>
+                        <h5 class="justificar">Graduado em Medicina pela Universidade Federal da Paraíba (UFPB), Residência Médica pela Fundação Hospitalar do Distrito Federal, Mestre em cirurgia pela Universidade Federal do Paraná (UFPR/UFMA), membro do Instituto de Neurocirurgia
+                            do Maranhão, responsável técnico pelo serviço de Neurocirurgia do Hospital São Domingos.</h5>
+                    </div>
+                    <div class="container">
+                        <div class="row ml-auto">
+                            <div class="col-md-6">
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5598988161111&text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta%20com%20o%20Dr.%20Periguari" target="_blank"><button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fab fa-whatsapp-square mr-2 whats"></i>(98) 98802-0212</button></a>
+                            </div>
 
-    <div class="container ">
+                            <div class="col-md-6 ml-auto">
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5598999712958&text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta%20com%20o%20Dr.%20Periguari" target="_blank"><button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fab fa-whatsapp-square mr-2 whats"></i>(98) 99971-2958</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Artigos-->
+
+
         <div class="row ">
             <div class="col-12 ">
-                <div class="jumbotron jumbotron-fluid mt-3 p-1 " style="background-color:rgb(144, 186, 187); ">
-                    <h1 id="textoArtigos " class="text-center display-3 ">Artigos</h1>
+                <div class="jumbotron jumbotron-fluid mt-3 p-1">
+                    <h1 id="textoArtigos" class="text-center display-4">Artigos</h1>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--Card-->
 
-    <div class="container ">
+        <!--Cards-->
+
+        <!--Card Esquerdo-->
+
         <div class="row ">
             <div class="col-sm-4 mt-4 ">
-                <div class="card border-success ">
+                <div class="card">
                     <img src="Imagens/artigos.png " alt=" ">
                     <div class="card-body ">
                         <h5 class="card-title ">Aneurisma Cerebral</h5>
-                        <p class="card-text ">É uma dilatação que se forma na parede enfraquecida de uma artéria do cérebro.</p>
-                        <a href="# " target="_blank " class="btn btn-success ">Saiba mais</a>
+                        <p class="card-text ">É uma dilatação que se forma na parede enfraquecida de uma artéria do cérebro...</p>
+
+                        <!--Botão do Card Esquerdo-->
+
+                        <a href="http://www.redebrasilavc.org.br/para-pacientes-e-falimiares/o-que-e-aneurisma-cerebral/" target="_blank " class="btn btncard">Saiba mais</a>
                     </div>
                 </div>
             </div>
+
+            <!--Card Central-->
+
             <div class="col-sm-4 mt-4 ">
-                <div class="card border-success ">
+                <div class="card">
                     <img src="Imagens/artigos.png " alt=" ">
                     <div class="card-body ">
                         <h5 class="card-title ">Acidente Vascular Cerebral (AVC)</h5>
-                        <p class="card-text ">O AVC, conhecido como derrame, pode ser de dois tipos: isquêmico e hemorrágico.</p>
-                        <a href="# " target="_blank " class="btn btn-success ">Saiba mais</a>
+                        <p class="card-text ">Acidente Vascular Cerebral (AVC) pode ser definido como...</p>
+
+                        <!--Botão do Card Central-->
+
+                        <a href="http://www.redebrasilavc.org.br/para-pacientes-e-falimiares/o-que-e-avc/" target="_blank " class="btn btncard">Saiba mais</a>
                     </div>
                 </div>
             </div>
+
+            <!--Card Direito-->
+
             <div class="col-sm-4 mt-4 ">
-                <div class="card border-success ">
+                <div class="card">
                     <img src="Imagens/artigos.png " alt=" ">
                     <div class="card-body ">
                         <h5 class="card-title ">Síndrome de Arnold-Chiari</h5>
-                        <p class="card-text ">Condição congênita em que o tecido cerebral invade o canal espinhal.</p>
-                        <a href="# " target="_blank " class="btn btn-success ">Saiba mais</a>
+                        <p class="card-text ">Condição congênita em que o tecido cerebral invade o canal espinhal...</p>
+
+                        <!--Botão do Card Direito-->
+
+                        <a href="https://institutchiaribcn.com/pt/doencas-que-tratamos/sindrome-de-arnold-chiari-i/?gclid=CjwKCAjw7-P1BRA2EiwAXoPWAwA8q4liChHqCqQpwd8I3rQJc_29gnYBC2bqTPi7jEAgS8nLvianURoCDasQAvD_BwE" target="_blank " class="btn btncard">Saiba mais</a>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!--Contato-->
+
+
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid mt-5 p-1">
+                    <h1 id="textoContato" class="text-center display-4">Contato</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Conteúdo do contato (parte imagem)-->
+
+
+        <div class="card mb-3">
+            <div class="row no-gutters ml-1 mr-1">
+                <div class="col-md-4 my-1">
+                    <img src="Imagens/contato.png" class="card-img" alt="...">
+                </div>
+
+                <!--Conteúdo do contato (parte do texto)-->
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold text-center">Agende sua consulta em nossos canais de Atendimento</h2>
+                        <h3 class="card-title font-weight-bold text-center">Consultas de Segunda a Sexta</h3>
+
+                        <!--Conteúdo do contato (botões)-->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-lg btn-block mt-3 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3216-8518</button>
+                                <button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3216-8519</button>
+                                <button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3216-8536</button>
+                            </div>
+
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-lg btn-block mt-3 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3216-8100</button>
+                                <button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3236-7705</button>
+                                <button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fas fa-phone-alt mr-2"></i>(98) 3236-4687</button>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5598988020212&text=Ol%C3%A1!%20Quero%20marcar%20uma%20consulta%20com%20o%20Dr.%20Periguari" target="_blank"><button type="button" class="btn btn-lg btn-block mt-2 btncard"><i class="fab fa-whatsapp-square mr-2 whats"></i>(98) 98802-0212</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé-->
+
+        <div class="row">
+            <div class="col-12 mb-1">
+                <hr class="linharodape">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row rodape p-2">
+                <div class="col-md-4 ">
+                    <a href="https://portalsbn.org/?erro=login" target="_blank"> <img src="Imagens/sbn.png" alt=""></a>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <a href="https://www.hospitalsaodomingos.com.br/" target="_blank"> <img src="Imagens/hsd.png" alt=""></a>
+                </div>
+                <div class="col-md-4">
+                    <a id="inicio" href=""><button type="button" class="btn btn-success btn-block mt-3">Voltar ao início</button></a>
+                </div>
+                <div class="col-12 mt-3">
+                    <h6 class="textofinal">--Todos os direitos reservados--</h6>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
 
 

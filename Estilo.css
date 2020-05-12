@@ -1,0 +1,56 @@
+/*--Navbar--*/
+
+.cornavbar {
+    background-color: rgb(144, 186, 187);
+}
+
+
+/*--Jumbotron--*/
+
+.jumbotron {
+    background-color: rgb(144, 186, 187) !important;
+}
+
+
+/*-- Botões lateriais do Carousel --*/
+
+.cor {
+    color: rgb(48, 114, 116);
+}
+
+.card {
+    border-color: rgb(144, 186, 187) !important;
+}
+
+
+/*-- Botões dos Cards --*/
+
+.btncard {
+    background-color: rgb(144, 186, 187) !important;
+}
+
+.linharodape {
+    background-color: rgb(48, 114, 116);
+}
+
+.whats {
+    font-size: larger;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+.rodape {
+    background-color: rgb(183, 202, 202);
+}
+
+.textofinal {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+
+.redes {
+    font-style: bold;
+}
